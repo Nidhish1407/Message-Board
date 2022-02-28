@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path');
 const app = express()
-const port = 3000
+//const port = 3000
+const port = 5000
+
 
 const {router:index} = require('./routers/index');
 const form = require('./routers/new');
@@ -18,7 +20,8 @@ app.set('view engine','ejs');
 app.use('/', index);
 app.use('/new',form);
 
-let host = '127.0.0.1'
+//let host = '127.0.0.1' 
+let host = 'localhost'
 app.listen(port,host, () => {
     console.log(`App listening on port ==> http://${host}:${port}/`)
 })
