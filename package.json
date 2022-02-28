@@ -1,0 +1,28 @@
+{
+  "name": "message_board",
+  "version": "1.0.0",
+  "description": "Ignore some",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js -e ejs,js,css,html,jpg,png,scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nidhish1407/Message-Board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nidhish1407/Message-Board/issues"
+  },
+  "homepage": "https://github.com/Nidhish1407/Message-Board#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}

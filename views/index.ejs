@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Message Board</title>
+</head>
+<body class="bg-orange-200">
+    <nav class="bg-purple-700 p-5 flex justify-center text-white">
+        <h1>Message Board</h1>
+    </nav>
+    
+    <div class="card mx-auto p-2 w-1/2 flex-col">
+        <div class="text-center m-2">
+                <a class="border-red-400 bg-slate-200 hover:bg-slate-300 hover:scale-110 rounded p-1 w-2 drop-shadow-md" href="/new">New Message</a>
+        </div>
+        <div class="">
+            <ul class="flex-col text-center">
+                <% messages.forEach(function(msg) { %>
+                    <li class="bg-slate-300 p-1 mb-1 rounded">
+                        <div>
+                            <strong>
+                                <%= msg.user %>
+                            </strong>
+                            <p>
+                                <%= msg.text %>
+                            </p>
+                            <p>
+                                <%= msg.date %>
+                            </p>
+                        </div>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
